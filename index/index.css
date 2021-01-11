@@ -1,0 +1,528 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background:#FFFFFA;
+}
+
+/*Header*/
+
+header {
+  width: 100%;
+  height: 600px;
+  background: #0575E6;  
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(227, 97%, 24%, 0.5), hsla(210, 96%, 46%, 0.5)), 
+  url(./media/img-header.jpg); 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header .textos-header {
+    color:white;
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo{
+    width: 30%;
+    margin-top:5px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+header nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin:0px auto;
+    padding-right:100px;
+    background:transparent;
+   
+}
+
+.menu-bar{
+    display: none;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+    float: right;
+    width: 70%;
+    height: 60px;
+  
+}
+
+header nav ul li {
+    float: right;
+}
+
+header nav ul li a {
+    color:#fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    
+    header nav {
+        background: #0575E6;
+        width: 80%;
+        height: 100%;
+        left:-100%;
+        margin: 0;
+        padding-right:0px;
+        position: fixed;
+    }
+
+    header nav ul {   
+        width: 100%;
+        height: 100%;   
+    }
+   
+    .logo {
+        display:none;
+        width: 0;
+    }
+
+    header nav ul li {
+        display:block;   
+        float: none;
+        width: 100%;
+        border-bottom: 1px solid rgb(255,255,255, 0.3);
+    }
+    .menu-bar {
+        display:block;
+        width: 100%;
+        background:#ccc;
+    }
+
+    .menu-bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background:#025959;
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu-bar i{
+        float:right;
+    }
+
+}
+/*Header Fin*/
+
+/*body*/
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color:#0575E6;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Sobre MI*/
+.sobreMi{
+    padding: 0 0 100px 0 !important;
+}
+.contenedor-sobreMi{
+    display:flex;
+    justify-content: space-evenly;
+}
+ .img-sobreMi{
+     width: 40%;
+    margin-top: 0px; 
+ }
+
+
+ .contenido-textos-sobreMi {
+     width: 45%;
+     display: flex;
+     align-items: center;
+     margin-top:40px;
+ }
+
+
+ .contenido-textos-sobreMi p{
+     padding: 0 0 30px 15px;
+     font-weight: 300;
+     font-size: 21px;
+     text-align: justify;
+ }
+
+ /*Portafolio*/
+
+ .portafolio{
+    background: #0575E6;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79,#0575E6); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     padding: 50px 0 0px 0;
+  }
+
+  .portafolio h2 {
+      color:white;
+  }
+
+ .galeria-port {
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+ }
+
+ .imagen-port {
+     width: 24%;
+     height: 250px;
+     margin-bottom: 10px;
+     overflow: hidden;
+     position: relative;
+     cursor: pointer;
+     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+ }
+
+ .imagen-port > img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display:block;
+ }
+
+ .hover-galeria {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top:0;
+     transform: scale(0);
+     background:hsla(273,91%,27%,0.7);
+     transition: transform .5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .hover-galeria img{
+     width: 50px;
+ }
+
+ .hover-galeria p {
+     color:#fff;
+ }
+
+ .imagen-port:hover .hover-galeria{
+     transform: scale(1);
+ }
+
+ /*Empresas*/
+  .Empresas{
+    background: #0575E6;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79,#0575E6); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 30px 0px 80px 0;
+   }
+ .contenedor-blog {
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .Empresas h2 {
+     color:white;
+ }
+
+.blog-post {
+    width: 45%;
+    background-color: #fff;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    margin-bottom: -50px;
+    border-radius: 5px;
+}
+
+.blog-post-contenido{
+    height: 220px;
+}
+
+.blog-post-img {
+    width: 60%;
+    height: 20rem;
+    position: relative;
+}
+
+.blog-post-img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+    border-radius: .8rem;
+    z-index: 20;
+}
+
+.blog-post-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   background: rgba(0, 0, 0, 0.4)
+}
+
+.subtitulo-Img{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color:white;
+}
+
+.blog-post-date span {
+    display: block;
+    color:black;
+    font-size: 18px;
+    font-weight: 600;
+    margin:.5rem 0;
+    line-height: 15px;
+}
+
+.blog-post-info {
+    width: 100%;
+    padding: 0px 15px;
+}
+
+
+.blog-post-title {
+    font-size: 25px;
+    text-transform: uppercase;
+    color:#4facfe;
+}
+
+.blog-post-text {
+    font-size: 16px;
+    color:black;
+}
+
+.blog-post-cta {
+    display:inline-block;
+    padding: 15px;
+    margin: 0 auto 0px auto;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color:#fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background: #0575E6;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79,#0575E6); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+  
+    .blog-post-cta:hover{
+        background: #0575E6;  
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0575E6, #021B79);  
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0575E6, #021B79); 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color:#fff;
+     }
+     
+     
+
+
+    @media screen and (max-width:1068px){
+        .blog-post{
+            max-width: 80rem;
+        }
+        .blog-post-img {
+            min-width: 30rem;
+            max-width: 30rem;
+        }
+    }
+
+    @media screen and (max-width:868px){
+        .blog-post{
+            padding: 2.5rem;
+            flex-direction: column;
+        }
+        .blog-post-img {
+            min-width: 100%;
+            max-width: 100%;
+            transform: translate(0, -8rem);
+        }
+    }
+
+    
+    
+
+ /*Servicios*/
+
+ .servicios{
+     padding: 50px;
+ }
+
+.container-servicios .card-servicios .face {
+    width: 40vw;
+    height: 200px;
+    transition: 0.5;
+}
+
+.container-servicios .card-servicios .face.face1{
+    position: relative;
+    background: #0575E6;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79,#0575E6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    transition: 0.6s;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    
+}
+
+.container-servicios .card-servicios:hover .face.face1 {
+    background: #0575E6;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #021B79);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #021B79); 
+    transform: translateY(0);
+}
+
+
+.container-servicios .card-servicios:hover 
+.face.face1 .contenido-servicios{
+    opacity: 1;
+}
+.container-servicios .card-servicios 
+.face.face1 .contenido-servicios img{
+    max-width: 100px;
+}
+
+.container-servicios .card-servicios 
+.face.face1 .contenido-servicios h3{
+margin: 0px 0 ;
+padding: 0;
+color: #fff;
+text-align: center;
+font-size: 1em;
+}
+
+.container-servicios .card-servicios
+ .face.face2 .contenido p {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'adam-cg';
+
+}
+
+.container-servicios 
+.card-servicios .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px black;
+    transform: translateY(-100px);
+    transition: 0.6s;
+    border-radius: 5px;
+}
+
+.container-servicios 
+.card-servicios:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.container-servicios .card-servicios 
+.face.face2 .contenido-servicios p {
+    margin: 0;
+    padding: 0;
+}
+ 
+
+ .servicio-cont{
+     margin-top:-120px;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .contenido-servicios-img{
+     display: flex;
+     justify-content: center;
+ }
+
+ 
+
+
+/*footer*/
+
+footer {
+    background: #0575E6;  
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021B79,#0575E6); 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 30px;
+}
+
+.contenedor-footer {
+    display: flex;
+     justify-content: space-evenly;
+     color:white;
+}
+
+.titulo-final {
+    text-align: center;
+    color:white;
+}
