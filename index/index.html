@@ -22,21 +22,20 @@
 <body>
     <!-- Header Section Begin -->
     <header class="header">
-        <div class="menu-bar">
-            <a href="#" class="bt-menu"><i class="fas fa-align-justify"></i>MENU</a>
+        <div id="menu-bar" class="menu-bar">
+            <a class="bt-menu"><i class="fas fa-align-justify"></i>MENU</a>
         </div>
         <nav>
             <div class="logo">
-                <img src="media/logoMenu.png" width="50px" height="50px" alt="">
+                <h2>LT</h2>
             </div>
             <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Sobre Mi</a></li> 
-              <li><a href="#">Servicios</a></li>  
-              <li><a href="#">Proyectos</a></li>
-             <li><a href="#">Contacto</a></li>  
-              
-            </ul>
+              <li><a class="menu-bar" href="./index.html#contacto">Contacto</a></li>
+              <li><a class="menu-bar" href="./index.html#servicios">Servicios</a></li> 
+              <li><a class="menu-bar" href="./index.html#proyectos">Proyectos</a></li> 
+              <li><a class="menu-bar" href="./index.html#sobreMi">Sobre Mi</a></li>
+              <li><a class="menu-bar" href="./index.html#">Inicio</a></li>
+             </ul>
         </nav>
         <section class="textos-header">
             <h1>Luis Javier Torres</h1>
@@ -52,24 +51,25 @@
     <!-- Header Fin -->
     <!-- Contenido -->
      <!-- Sobre Mi -->
-    <section class="contenedor sobreMi">
+    <section id="sobreMi" class="contenedor sobreMi">
           <h2 class="titulo">Sobre Mi</h2>
           <div class="contenedor-sobreMi">
-          
-          <img class="img-sobreMi" src="media/foto.jpg" height="150px" alt="">
-         
+            
          <div class="contenido-textos-sobreMi">
     
         <p>Consultor SAP, con 4 años de experiencia en los módulos SD-LETRA, y
             certificado en Salesforce Administrator desde agosto 2020.</p>
-         </div>
-        
+         </div>      
         </div>
+            <div class="boton-sobreMi">
+            <a href="./CV-LJTL.pdf" id="boton1-sobreMi" class="blog-post-cta" target="blank">
+            Curriculum</a>
+            </div>
     </section>
      <!-- Sobre Mi Fin-->
      
      <!--Proyectos-->
-     <section class="Empresas">
+     <section id="proyectos" class="Empresas">
        
      <div class="clientes-contenedor">
       <h2 class="titulo">Proyectos recientes</h2>
@@ -84,7 +84,7 @@
               <div class="carousel__elemento">
                 <div class="blog-post">
                     <div class="blog-post-img">
-                       <img src="media/Empresas/sofos.jpeg">
+                       <img src="media/Empresas/Sofos.jpg">
                     <div class="subtitulo-Img">
                    <h5>Consultora Sofos</h5>
                    </div>   
@@ -105,9 +105,7 @@
                         </p>
                         
                         </div>
-                        <div class="boton-empresas">
-                           <a href="#" class="blog-post-cta">Leer Mas</a>
-                           </div>
+                        
                        </div>
                      </div>
               </div>
@@ -132,9 +130,7 @@
                         </p>
                         
                         </div>
-                        <div class="boton-empresas">
-                        <a href="#" class="blog-post-cta">Leer Mas</a>
-                        </div>
+                        
                      </div>
                      
                      </div>
@@ -162,9 +158,7 @@
                         </p>
                         
                         </div>
-                        <div class="boton-empresas">
-                           <a href="#" class="blog-post-cta">Leer Mas</a>
-                           </div>
+                        
                        </div>
                      </div>
               </div>
@@ -191,9 +185,6 @@
                         </p>
                         
                         </div>
-                        <div class="boton-empresas">
-                           <a href="#" class="blog-post-cta">Leer Mas</a>
-                           </div>
                        </div>
                      </div>
               </div>
@@ -221,9 +212,7 @@
                         </p>
                         
                         </div>
-                        <div class="boton-empresas">
-                        <a href="#" class="blog-post-cta">Leer Mas</a>
-                        </div>
+                        
                      </div>
                      
                      </div>
@@ -247,12 +236,12 @@
     <!--Portafolio Fin-->
     <!--Certificados-->
      
-    <section class="portafolio">
+    <section id="certificados" class="portafolio">
       <div class="Contenedor-certificados">
        <h2 class="titulo">Estudios y Certificados</h2>
        <div class="galeria-port">
            <div class="imagen-port">
-            <img class="img.portafolio" src="media/estudios/USB.png" alt="">
+            <img class="img.portafolio" src="media/estudios/USB.jpg" alt="">
             <div class="hover-galeria">
                 <h5><strong>2010-2014</strong></h5>
                  <h5>T.S.U en Organización Empresarial</h5>
@@ -271,6 +260,7 @@
                 <a href="https://trailblazer.me/id/ltorreslpez" 
                 target="blank" class="boton-certificado">Ver mas</a>
             </div>
+            <div class=tamaño><h1>hola</h1></div>
            </div>
 
            
@@ -280,7 +270,7 @@
     <!--certificados Fin-->
      
     <!--Servicios-->
-    <section class="servicios">
+    <section id="servicios" class="servicios">
          <h2 class="titulo"> Servicios</h2>
          <div class="servicio-cont">
             <div class="container-servicios">
@@ -295,7 +285,13 @@
                     </div>
                     <div class="face face2">
                         <div class="contenido-servicios">
-                            <p>SD/LETRA (ECC y SAP 4/HANA)</p>
+                            <p>*Planificación y preparación de requerimientos específicos para
+                                implantarse en el sistema SAP</p>
+                            <p>*Documentación de desarrollos</p>
+                            <p>*Configuración</p>
+                            <p>*Pruebas unitarias</p>
+                            <p>*Pruebas integrales</p>
+                            <p>*Cutover</p>
                         </div>
                     </div>
                 </div>
@@ -313,7 +309,12 @@
                     </div>
                     <div class="face face2">
                         <div class="contenido-servicios">
-                            <p>???????</p>
+                            <p>*Crear procesos de aprobación 
+                                personalizado que permita aprobar gastos.</p>
+                            <p>*Realizar informes personalizados para zona de ventas.</p>
+                            <p>*Proporcionar permisos de usuarios</p>
+                            <p>*Responder a preguntas acerca de su propio acceso o el de otros a los registros.</p>
+                            <p>*Solucionar mensajes de error.</p>
                         </div>
                     </div>
                 </div>
@@ -325,7 +326,7 @@
      <!--Pie de Pagina-->
      <footer>
 
-         <div class="contenedor-footer">
+         <div id="contacto" class="contenedor-footer">
             <div class="content-foo">
                 <h4>Whatsapp <i class="fab fa-whatsapp"></i></h4>
                

@@ -48,6 +48,10 @@ header .textos-header {
    
 }
 
+.logo h2{
+    color:white;
+}
+
 header nav {
     width: 100%;
     height: 60px;
@@ -58,7 +62,7 @@ header nav {
    
 }
 
-.menu-bar{
+#menu-bar{
     display: none;
 }
 
@@ -89,14 +93,16 @@ header nav ul li a {
         width: 80%;
         height: 100%;
         left:-100%;
-        margin: 0;
+        margin: 75px 0 0 0;
         padding-right:0px;
         position: fixed;
+        z-index:30;
     }
 
     header nav ul {   
         width: 100%;
-        height: 100%;   
+        height: 100%;  
+        padding-left: 0; 
     }
    
     .logo {
@@ -110,11 +116,14 @@ header nav ul li a {
         width: 100%;
         border-bottom: 1px solid rgb(255,255,255, 0.3);
     }
+    #menu-bar{
+        display: block;
+    }
     .menu-bar {
         display:block;
         width: 100%;
-        background:#ccc;
-    }
+        background:#0575E6;
+       }
 
     .menu-bar .bt-menu {
         display: block;
@@ -127,6 +136,10 @@ header nav ul li a {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        position: fixed;
+        top:0;
+        width: 100%;
+        z-index:30;
     }
 
     .menu-bar i{
@@ -161,14 +174,9 @@ header nav ul li a {
     display:flex;
     justify-content: space-evenly;
 }
- .img-sobreMi{
-     width: 40%;
-    margin-top: 0px; 
- }
-
-
+ 
  .contenido-textos-sobreMi {
-     width: 45%;
+     width: 60%;
      display: flex;
      align-items: center;
      margin-top:40px;
@@ -179,8 +187,20 @@ header nav ul li a {
      padding: 0 0 30px 15px;
      font-weight: 300;
      font-size: 21px;
-     text-align: justify;
+     text-align: center;
  }
+
+ .boton-sobreMi{
+     margin:auto;
+     width: 20%;
+ }
+
+ #boton1-sobreMi{
+    width: 100% !important;
+ }
+ 
+
+ 
 
  @media screen and (max-width:868px){
     .contenedor-sobreMi{
@@ -189,7 +209,8 @@ header nav ul li a {
     }
     .contenido-textos-sobreMi {
         width: 80%;
-        margin-left:10%
+        margin-left:10%;
+        margin-top:-40px;
         }
         .img-sobreMi {
             width: 80%;
@@ -198,6 +219,12 @@ header nav ul li a {
 
         .sobreMi{
         padding: 0 !important;
+        }
+
+        .boton-sobreMi{
+            width: 50%;
+            margin-bottom: 30px;
+            margin-top:-20px;
         }
     }
 
@@ -288,6 +315,13 @@ header nav ul li a {
         width: 80%;
         margin-bottom: 30px;      
     }
+
+    .hover-galeria{
+        transform: scale(1);
+    }
+    .boton-certificado{
+        width: 50%;
+    }
 }
 
  /*Proyectos*/
@@ -331,7 +365,7 @@ header nav ul li a {
 
 .blog-post-img img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     background-size: cover;
     display: block;
     border-radius: .8rem;
@@ -554,11 +588,11 @@ font-size: 1em;
 }
 
 .container-servicios .card-servicios
- .face.face2 .contenido p {
-    text-align: center;
+ .face.face2 .contenido-servicios p {
+    text-align: left;
     font-size: 16px;
     font-family: 'adam-cg';
-
+    padding: 0 30px !important;
 }
 
 .container-servicios 
