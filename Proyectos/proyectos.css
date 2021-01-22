@@ -17,7 +17,7 @@ header {
     background: -webkit-linear-gradient(to right, #021B79, #0575E6);  
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsla(227, 97%, 24%, 0.5), hsla(210, 96%, 46%, 0.5)), 
-    url(../index/media/img-header.jpg); 
+    url(../media/img-header.jpg); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
